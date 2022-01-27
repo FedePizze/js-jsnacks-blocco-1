@@ -4,7 +4,7 @@
 
 let tot = '';
 let numero = '';
-let li = '';
+let h1 = '';
 let cubo = '';
 
 tot = parseInt(prompt('Inserisci numero'));
@@ -12,8 +12,8 @@ tot = parseInt(prompt('Inserisci numero'));
 for (i = 1; i <= tot; i++){
     numero = i;
     cubo = (Math.pow(numero, numero) * numero);
-    li += `<li id="num">${cubo}</li>`
+    h1 += `<h1>${cubo}</h1>`
     
     let block1 = document.getElementById('block1');
-    block1.innerHTML = li;
+    block1.innerHTML = h1;
 }
