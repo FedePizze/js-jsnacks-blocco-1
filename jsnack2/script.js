@@ -14,7 +14,6 @@ for (i = 1; i <= tot; i++){
     cubo = (Math.pow(numero, numero) * numero);
     li += `<li id="num">${cubo}</li>`
     
-
     let block1 = document.getElementById('block1');
     block1.innerHTML = li;
 }
