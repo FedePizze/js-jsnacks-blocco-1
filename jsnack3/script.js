@@ -3,9 +3,18 @@
 */
 
 let totale = 0;
+let h1 = '';
 
 for (i = 0; i < 11; i++){
     totale = totale + i;
 }
 
-console.log(totale);
+const media =  totale / 10;
+
+h1 += `<div>
+            <h1>${totale}</h1>
+            <h1>${media}</h1>
+       </div>`
+ 
+let block1 = document.getElementById('block1');
+block1.innerHTML = h1;
