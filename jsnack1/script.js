@@ -3,14 +3,17 @@
 */
 
 let numero = '';
-let li = '';
+let h1 = '';
 let cubo = '';
+
+let totale = 0;
 
 for (i = 0; i <= 9; i++){
     numero = parseInt(prompt('Inserisci numero'));
-    li += `<li id="num">${numero}</li>`;
-
-    
-    let block1 = document.getElementById('block1');
-    block1.innerHTML = li;
+    totale = totale + numero;
 }
+
+h1 += `<h1>${totale}</h1>`
+    
+let block1 = document.getElementById('block1');
+block1.innerHTML = h1;
